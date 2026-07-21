@@ -1,0 +1,277 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-07-14 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "workflow_state",
+  "student",
+  "student_user",
+  "competency",
+  "workplace",
+  "column_break_1",
+  "instructor",
+  "assessment_date",
+  "outcome",
+  "section_break_1",
+  "task_description",
+  "assessor_comments",
+  "apprentice_comments",
+  "section_break_2",
+  "evidence",
+  "section_break_3",
+  "assessor_signed",
+  "assessor_signed_on",
+  "column_break_2",
+  "apprentice_signed",
+  "apprentice_signed_on",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "APPR-PA-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workflow State",
+   "no_copy": 1,
+   "options": "Draft\nAwaiting Review\nReviewed\nSigned Off",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Apprentice",
+   "options": "Trainee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Apprentice User Account",
+   "options": "User",
+   "read_only": 1,
+   "fetch_from": "student.user"
+  },
+  {
+   "fieldname": "competency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Competency / Task",
+   "options": "Competency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "workplace",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workplace / Site",
+   "options": "Workplace"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assessor",
+   "options": "Trainer",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Assessment Date",
+   "reqd": 1
+  },
+  {
+   "default": "Not Yet Competent",
+   "fieldname": "outcome",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Outcome",
+   "options": "Competent\nNot Yet Competent\nCompetent with Gaps",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Assessment Notes"
+  },
+  {
+   "fieldname": "task_description",
+   "fieldtype": "Small Text",
+   "label": "Task Observed"
+  },
+  {
+   "fieldname": "assessor_comments",
+   "fieldtype": "Text Editor",
+   "label": "Assessor Comments"
+  },
+  {
+   "fieldname": "apprentice_comments",
+   "fieldtype": "Text Editor",
+   "label": "Apprentice Comments / Reflection",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Evidence (Photos / Videos / Documents)"
+  },
+  {
+   "fieldname": "evidence",
+   "fieldtype": "Table",
+   "label": "Evidence",
+   "options": "Practical Assessment Evidence",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Sign-off"
+  },
+  {
+   "default": "0",
+   "fieldname": "assessor_signed",
+   "fieldtype": "Check",
+   "label": "Assessor Confirms Outcome"
+  },
+  {
+   "depends_on": "assessor_signed",
+   "fieldname": "assessor_signed_on",
+   "fieldtype": "Datetime",
+   "label": "Assessor Signed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "apprentice_signed",
+   "fieldtype": "Check",
+   "label": "Apprentice Acknowledges",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "apprentice_signed",
+   "fieldname": "apprentice_signed_on",
+   "fieldtype": "Datetime",
+   "label": "Apprentice Signed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Practical Assessment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-14 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Apprenticeship",
+ "name": "Practical Assessment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Education Manager",
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Instructor",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Apprentice"
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Apprentice",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

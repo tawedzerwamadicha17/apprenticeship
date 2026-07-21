@@ -1,0 +1,163 @@
+[
+ {
+  "doctype": "Workspace",
+  "name": "Apprenticeship",
+  "label": "Apprenticeship",
+  "title": "Apprenticeship",
+  "module": "Apprenticeship",
+  "category": "Modules",
+  "icon": "education",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "public": 1,
+  "sequence_id": 25.0,
+  "for_user": "",
+  "parent_page": "",
+  "content": "[{\"id\": null, \"type\": \"header\", \"data\": {\"text\": \"Apprenticeship\", \"col\": \"Dark Grey\"}}, {\"id\": null, \"type\": \"paragraph\", \"data\": {\"text\": \"Manage trainees, trainers, training courses, competencies, workplaces, and practical assessments.\"}}, {\"id\": null, \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": null, \"type\": \"header\", \"data\": {\"text\": \"Assessments\", \"col\": \"Grey\"}}, {\"id\": null, \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Practical Assessment\", \"col\": 3}}, {\"id\": null, \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Practical Assessments\", \"col\": 3}}, {\"id\": null, \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": null, \"type\": \"header\", \"data\": {\"text\": \"Masters\", \"col\": \"Grey\"}}, {\"id\": null, \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}, {\"id\": null, \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": null, \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": \"Grey\"}}, {\"id\": null, \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}]",
+  "shortcuts": [
+   {
+    "type": "DocType",
+    "label": "Practical Assessment",
+    "link_to": "Practical Assessment",
+    "doc_view": "List",
+    "color": "Green",
+    "format": "",
+    "stats_filter": "{}"
+   },
+   {
+    "type": "URL",
+    "label": "My Practical Assessments",
+    "url": "/my-practical-assessments",
+    "color": "Blue"
+   }
+  ],
+  "links": [
+   {
+    "type": "Card Break",
+    "label": "Masters"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Trainee",
+    "label": "Trainee"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Trainer",
+    "label": "Trainer"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Programme",
+    "label": "Programme"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Cohort",
+    "label": "Cohort"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Training Course",
+    "label": "Training Course"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Competency",
+    "label": "Competency"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Workplace",
+    "label": "Workplace"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Dealer",
+    "label": "Dealer"
+   },
+   {
+    "type": "Link",
+    "link_type": "DocType",
+    "link_to": "Trainer Assignment",
+    "label": "Trainer Assignment"
+   },
+   {
+    "type": "Card Break",
+    "label": "Reports"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Apprentice Competency Progress",
+    "label": "Apprentice Competency Progress"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Courses Done by Dealer",
+    "label": "Courses Done by Dealer"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Courses Done by Trainee",
+    "label": "Courses Done by Trainee"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Courses Done per Month",
+    "label": "Courses Done per Month"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Courses Run by Instructor",
+    "label": "Courses Run by Instructor"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Courses to be Attended",
+    "label": "Courses to be Attended"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Dealer Course Participation",
+    "label": "Dealer Course Participation"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Passes per Course",
+    "label": "Passes per Course"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Trainee Date of Joining or Leaving",
+    "label": "Trainee Date of Joining or Leaving"
+   },
+   {
+    "type": "Link",
+    "link_type": "Report",
+    "link_to": "Trainee Performance per Course",
+    "label": "Trainee Performance per Course"
+   }
+  ],
+  "charts": [],
+  "number_cards": [],
+  "quick_lists": [],
+  "roles": []
+ }
+]

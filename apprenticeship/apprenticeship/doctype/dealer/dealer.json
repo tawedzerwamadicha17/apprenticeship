@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trade_name",
+  "city",
+  "column_break_1",
+  "status",
+  "address",
+  "section_break_1",
+  "products_brands",
+  "section_break_2",
+  "total_staff",
+  "admin_staff",
+  "accounts_staff",
+  "column_break_3",
+  "parts_staff",
+  "technicians_staff",
+  "support_staff"
+ ],
+ "fields": [
+  {
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_global_search": 1,
+   "label": "Trade Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "2S\n3S"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Products / Brands"
+  },
+  {
+   "fieldname": "products_brands",
+   "fieldtype": "Small Text",
+   "label": "Products / Brands"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Staff Complement"
+  },
+  {
+   "fieldname": "total_staff",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "admin_staff",
+   "fieldtype": "Int",
+   "label": "Admin"
+  },
+  {
+   "fieldname": "accounts_staff",
+   "fieldtype": "Int",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parts_staff",
+   "fieldtype": "Int",
+   "label": "Parts"
+  },
+  {
+   "fieldname": "technicians_staff",
+   "fieldtype": "Int",
+   "label": "Technicians"
+  },
+  {
+   "fieldname": "support_staff",
+   "fieldtype": "Int",
+   "label": "Support"
+  }
+ ],
+ "links": [],
+ "modified": "2026-07-17 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Apprenticeship",
+ "name": "Dealer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:trade_name",
+ "naming_rule": "By fieldname",
+ "title_field": "trade_name"
+}

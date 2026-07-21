@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course_name",
+  "type",
+  "column_break_1",
+  "venue",
+  "duration",
+  "section_break_1",
+  "start_date",
+  "end_date",
+  "column_break_2",
+  "instructor",
+  "target_group",
+  "section_break_2",
+  "course_content",
+  "prerequisite",
+  "section_break_3",
+  "min_attendees",
+  "column_break_3",
+  "max_attendees",
+  "class_average"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_global_search": 1,
+   "label": "Course Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Classroom\nOnline (OEM)\nVirtual"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Instructor",
+   "options": "Trainer"
+  },
+  {
+   "fieldname": "target_group",
+   "fieldtype": "Small Text",
+   "label": "Target Group"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Content"
+  },
+  {
+   "fieldname": "course_content",
+   "fieldtype": "Text Editor",
+   "label": "Course Content"
+  },
+  {
+   "fieldname": "prerequisite",
+   "fieldtype": "Small Text",
+   "label": "Prerequisite"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Class Size"
+  },
+  {
+   "fieldname": "min_attendees",
+   "fieldtype": "Int",
+   "label": "Minimum # of Attendees"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_attendees",
+   "fieldtype": "Int",
+   "label": "Maximum # of Attendees"
+  },
+  {
+   "fieldname": "class_average",
+   "fieldtype": "Float",
+   "label": "Class Average"
+  }
+ ],
+ "links": [],
+ "modified": "2026-07-17 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Apprenticeship",
+ "name": "Training Course",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:course_name",
+ "naming_rule": "By fieldname",
+ "title_field": "course_name"
+}

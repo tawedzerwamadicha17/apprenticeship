@@ -1,0 +1,74 @@
+[
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Student",
+  "translated_text": "Apprentice"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Students",
+  "translated_text": "Apprentices"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Student Name",
+  "translated_text": "Apprentice Name"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Instructor",
+  "translated_text": "Trainer / Assessor"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Instructors",
+  "translated_text": "Trainers / Assessors"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Instructor Name",
+  "translated_text": "Trainer / Assessor Name"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Program",
+  "translated_text": "Apprenticeship Programme"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Programs",
+  "translated_text": "Apprenticeship Programmes"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Course",
+  "translated_text": "Training Module"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Courses",
+  "translated_text": "Training Modules"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Student Group",
+  "translated_text": "Cohort"
+ },
+ {
+  "doctype": "Translation",
+  "language": "en",
+  "source_text": "Student Groups",
+  "translated_text": "Cohorts"
+ }
+]

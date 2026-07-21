@@ -1,0 +1,336 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "full_name",
+  "column_break_1",
+  "date_of_birth",
+  "sex",
+  "marital_status",
+  "section_break_id",
+  "national_id",
+  "passport_number",
+  "column_break_id",
+  "drivers_license",
+  "permission_to_drive_company_vehicles",
+  "section_break_emp",
+  "employment_number",
+  "position_held",
+  "apprentice_number",
+  "dealer",
+  "column_break_emp",
+  "date_of_engagement",
+  "date_of_resignation",
+  "section_break_contact",
+  "email",
+  "phone",
+  "user",
+  "column_break_contact",
+  "residential_address",
+  "next_of_kin",
+  "next_of_kin_contact",
+  "section_break_academic",
+  "academic_level",
+  "religion",
+  "college_attended",
+  "column_break_academic",
+  "professional_qualifications",
+  "other_achievements",
+  "career_development_plan",
+  "section_break_health",
+  "allergies",
+  "column_break_health",
+  "chronic_diseases",
+  "section_break_courses",
+  "courses_attended",
+  "courses_to_attend",
+  "section_break_comments",
+  "comments"
+ ],
+ "fields": [
+  {
+   "default": "APPR-TE-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "APPR-TE-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_global_search": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "Single\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "section_break_id",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID #"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport #"
+  },
+  {
+   "fieldname": "column_break_id",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "drivers_license",
+   "fieldtype": "Data",
+   "label": "Driver's License #"
+  },
+  {
+   "fieldname": "permission_to_drive_company_vehicles",
+   "fieldtype": "Check",
+   "label": "Permission to Drive Company Vehicles"
+  },
+  {
+   "fieldname": "section_break_emp",
+   "fieldtype": "Section Break",
+   "label": "Employment"
+  },
+  {
+   "fieldname": "employment_number",
+   "fieldtype": "Data",
+   "label": "Employment #"
+  },
+  {
+   "fieldname": "position_held",
+   "fieldtype": "Data",
+   "label": "Position Held"
+  },
+  {
+   "fieldname": "apprentice_number",
+   "fieldtype": "Data",
+   "label": "Apprentice #"
+  },
+  {
+   "fieldname": "dealer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Dealer / Business Unit",
+   "options": "Dealer"
+  },
+  {
+   "fieldname": "column_break_emp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_engagement",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Engagement"
+  },
+  {
+   "fieldname": "date_of_resignation",
+   "fieldtype": "Date",
+   "label": "Date of Resignation"
+  },
+  {
+   "fieldname": "section_break_contact",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Telephone #",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Portal User Account",
+   "options": "User",
+   "description": "Linked so the trainee can log in and view their own Practical Assessments"
+  },
+  {
+   "fieldname": "column_break_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Small Text",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "next_of_kin",
+   "fieldtype": "Data",
+   "label": "Next of Kin"
+  },
+  {
+   "fieldname": "next_of_kin_contact",
+   "fieldtype": "Data",
+   "label": "Next of Kin Contact"
+  },
+  {
+   "fieldname": "section_break_academic",
+   "fieldtype": "Section Break",
+   "label": "Academic & Career"
+  },
+  {
+   "fieldname": "academic_level",
+   "fieldtype": "Data",
+   "label": "Academic Level"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "college_attended",
+   "fieldtype": "Data",
+   "label": "College Attended"
+  },
+  {
+   "fieldname": "column_break_academic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "professional_qualifications",
+   "fieldtype": "Small Text",
+   "label": "Professional Qualifications"
+  },
+  {
+   "fieldname": "other_achievements",
+   "fieldtype": "Small Text",
+   "label": "Other Achievements"
+  },
+  {
+   "fieldname": "career_development_plan",
+   "fieldtype": "Text Editor",
+   "label": "Career Development Plan"
+  },
+  {
+   "fieldname": "section_break_health",
+   "fieldtype": "Section Break",
+   "label": "Health"
+  },
+  {
+   "fieldname": "allergies",
+   "fieldtype": "Small Text",
+   "label": "Allergies"
+  },
+  {
+   "fieldname": "column_break_health",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chronic_diseases",
+   "fieldtype": "Small Text",
+   "label": "Chronic Diseases"
+  },
+  {
+   "fieldname": "section_break_courses",
+   "fieldtype": "Section Break",
+   "label": "Courses"
+  },
+  {
+   "fieldname": "courses_attended",
+   "fieldtype": "Table",
+   "label": "Courses Attended",
+   "options": "Trainee Course Attended"
+  },
+  {
+   "fieldname": "courses_to_attend",
+   "fieldtype": "Table",
+   "label": "Courses to Attend",
+   "options": "Trainee Course To Attend"
+  },
+  {
+   "fieldname": "section_break_comments",
+   "fieldtype": "Section Break",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  }
+ ],
+ "links": [],
+ "modified": "2026-07-17 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Apprenticeship",
+ "name": "Trainee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "naming_rule": "By \"Naming Series\" field",
+ "title_field": "full_name"
+}

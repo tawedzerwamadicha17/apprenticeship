@@ -1,0 +1,34 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-07-17 09:00:00.000000",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-07-17 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Apprenticeship",
+ "name": "Courses to be Attended",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n        cta.parent as \"Trainee:Link/Trainee:150\",\n        cta.course as \"Course:Link/Training Course:220\",\n        cta.planned_date as \"Planned Date:Date:120\"\n    FROM `tabTrainee Course To Attend` cta\n    ORDER BY cta.planned_date",
+ "ref_doctype": "Trainee",
+ "report_name": "Courses to be Attended",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Education Manager"
+  },
+  {
+   "role": "Instructor"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

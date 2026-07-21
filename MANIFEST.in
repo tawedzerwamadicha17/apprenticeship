@@ -1,0 +1,4 @@
+include MANIFEST.in
+include *.txt
+include *.md
+recursive-include apprenticeship *.json *.md *.txt *.csv *.svg *.png *.jpg *.jpeg *.js *.css *.html

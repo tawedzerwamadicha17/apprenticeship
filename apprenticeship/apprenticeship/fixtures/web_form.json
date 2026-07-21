@@ -1,0 +1,36 @@
+[
+ {
+  "doctype": "Web Form",
+  "title": "My Practical Assessments",
+  "route": "my-practical-assessments",
+  "doc_type": "Practical Assessment",
+  "module": "Apprenticeship",
+  "is_standard": 1,
+  "published": 1,
+  "login_required": 1,
+  "allow_edit": 1,
+  "allow_multiple": 0,
+  "allow_delete": 0,
+  "show_list": 1,
+  "list_title": "My Practical Assessments",
+  "introduction_text": "Your workplace competency assessments. Add photo/video evidence and acknowledge sign-off once your assessor has confirmed the outcome.",
+  "web_form_fields": [
+   {"fieldname": "competency", "fieldtype": "Link", "label": "Competency / Task", "read_only": 1},
+   {"fieldname": "workplace", "fieldtype": "Link", "label": "Workplace / Site", "read_only": 1},
+   {"fieldname": "instructor", "fieldtype": "Link", "label": "Assessor", "read_only": 1},
+   {"fieldname": "assessment_date", "fieldtype": "Date", "label": "Assessment Date", "read_only": 1},
+   {"fieldname": "outcome", "fieldtype": "Select", "label": "Outcome", "read_only": 1},
+   {"fieldname": "assessor_comments", "fieldtype": "Text Editor", "label": "Assessor Comments", "read_only": 1},
+   {"fieldname": "apprentice_comments", "fieldtype": "Text Editor", "label": "Your Comments / Reflection", "read_only": 0},
+   {"fieldname": "evidence", "fieldtype": "Table", "label": "Evidence (add your photos/videos here)", "read_only": 0},
+   {"fieldname": "apprentice_signed", "fieldtype": "Check", "label": "I acknowledge this assessment", "read_only": 0},
+   {"fieldname": "workflow_state", "fieldtype": "Select", "label": "Status", "read_only": 1}
+  ],
+  "list_columns": [
+   {"fieldname": "competency"},
+   {"fieldname": "assessment_date"},
+   {"fieldname": "outcome"},
+   {"fieldname": "workflow_state"}
+  ]
+ }
+]

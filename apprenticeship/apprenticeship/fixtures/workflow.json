@@ -1,0 +1,66 @@
+[
+ {
+  "doctype": "Workflow",
+  "workflow_name": "Practical Assessment Workflow",
+  "document_type": "Practical Assessment",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "workflow_state_field": "workflow_state",
+  "states": [
+   {
+    "state": "Draft",
+    "doc_status": "0",
+    "allow_edit": "Instructor",
+    "style": "Warning"
+   },
+   {
+    "state": "Awaiting Review",
+    "doc_status": "0",
+    "allow_edit": "Instructor",
+    "style": "Warning"
+   },
+   {
+    "state": "Reviewed",
+    "doc_status": "0",
+    "allow_edit": "Education Manager",
+    "style": "Primary"
+   },
+   {
+    "state": "Signed Off",
+    "doc_status": "1",
+    "allow_edit": "Education Manager",
+    "style": "Success"
+   }
+  ],
+  "transitions": [
+   {
+    "state": "Draft",
+    "action": "Submit for Review",
+    "next_state": "Awaiting Review",
+    "allowed": "Instructor",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Awaiting Review",
+    "action": "Send Back",
+    "next_state": "Draft",
+    "allowed": "Education Manager",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Awaiting Review",
+    "action": "Review",
+    "next_state": "Reviewed",
+    "allowed": "Education Manager",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Reviewed",
+    "action": "Sign Off",
+    "next_state": "Signed Off",
+    "allowed": "Education Manager",
+    "allow_self_approval": 1
+   }
+  ]
+ }
+]

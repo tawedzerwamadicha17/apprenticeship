@@ -1,0 +1,54 @@
+[
+ {
+  "doctype": "Notification",
+  "name": "Practical Assessment Awaiting Review",
+  "subject": "Practical Assessment awaiting review: {{ doc.name }}",
+  "document_type": "Practical Assessment",
+  "event": "Value Change",
+  "value_changed": "workflow_state",
+  "condition": "doc.workflow_state == 'Awaiting Review'",
+  "channel": "Email",
+  "enabled": 1,
+  "send_system_notification": 1,
+  "attach_print": 0,
+  "recipients": [
+   {"receiver_by_role": "Education Manager"}
+  ],
+  "message": "<p>A practical assessment for apprentice {{ doc.student }} (Competency: {{ doc.competency }}) has been submitted for review by the assessor and is awaiting your action.</p><p>Outcome recorded: <b>{{ doc.outcome }}</b></p>"
+ },
+ {
+  "doctype": "Notification",
+  "name": "Practical Assessment Sent Back",
+  "subject": "Practical Assessment sent back for changes: {{ doc.name }}",
+  "document_type": "Practical Assessment",
+  "event": "Value Change",
+  "value_changed": "workflow_state",
+  "condition": "doc.workflow_state == 'Draft' and doc.get_db_value('workflow_state') != doc.workflow_state",
+  "channel": "Email",
+  "enabled": 1,
+  "send_system_notification": 1,
+  "attach_print": 0,
+  "recipients": [
+   {"receiver_by_document_field": "owner"}
+  ],
+  "message": "<p>Your practical assessment {{ doc.name }} for apprentice {{ doc.student }} was sent back by the reviewer and needs changes before resubmission.</p>"
+ },
+ {
+  "doctype": "Notification",
+  "name": "Practical Assessment Signed Off",
+  "subject": "Practical Assessment signed off: {{ doc.name }}",
+  "document_type": "Practical Assessment",
+  "event": "Value Change",
+  "value_changed": "workflow_state",
+  "condition": "doc.workflow_state == 'Signed Off'",
+  "channel": "Email",
+  "enabled": 1,
+  "send_system_notification": 1,
+  "attach_print": 1,
+  "recipients": [
+   {"receiver_by_document_field": "owner"},
+   {"receiver_by_document_field": "student_user"}
+  ],
+  "message": "<p>The practical assessment {{ doc.name }} for competency <b>{{ doc.competency }}</b> has been signed off.</p><p>Outcome: <b>{{ doc.outcome }}</b></p><p>The apprentice can view and acknowledge this via the portal at /my-practical-assessments.</p>"
+ }
+]
