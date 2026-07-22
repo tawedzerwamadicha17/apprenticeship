@@ -1,19 +1,10 @@
-from setuptools import find_packages, setup
-
-with open("requirements.txt") as f:
-	install_requires = f.read().strip().split("\n")
-
-# get version from __version__ variable in apprenticeship/__init__.py
-from apprenticeship import __version__ as version
+from setuptools import setup, find_packages
 
 setup(
-	name="apprenticeship",
-	version=version,
-	description="Apprenticeship training and workplace assessment",
-	author="Tawe",
-	author_email="mtawedzerwadonald17@gmail.com",
-	packages=find_packages(),
-	zip_safe=False,
-	include_package_data=True,
-	install_requires=install_requires,
+    name='apprenticeship',
+    version='0.0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[],
+    zip_safe=False,
 )
